@@ -267,18 +267,21 @@ WHERE cus_id = '{$_SESSION['id']}' and is_close = false GROUP BY cart.id";
                                     <div class="col-md-12 row">
                                         <label for="province" class="font-weight-bold col-form-label col-md-2"
                                                style="font-size: 15px;color: #646464">จังหวัด : </label>
-                                        <select class="form-control col-md-4" id="provinces" name="provinces">
-                                            <option value="0" id="p_start">เลือกจังหวัด</option>
+                                        <input class="form-control form-inline col-md-3" id="province"
+                                               name="postal_code"
+                                               placeholder="จังหวัด">
+                                        <!--                                        <select class="form-control col-md-4" id="provinces" name="provinces">-->
+                                        <!--                                            <option value="0" id="p_start">เลือกจังหวัด</option>-->
 
-                                            //province sql
+                                        //province sql
 
-                                            //End province sql
+                                        //End province sql
                                         </select>
                                         <label for="amphures" class="font-weight-bold col-form-label col-md-auto"
                                                style="font-size: 15px;color: #646464">อำเภอ : </label>
-                                        <select class="form-control col-md-4" id="amphures" name="amphures">
-                                            <option value="0" id="a_start">เลือกอำเภอ</option>
-                                        </select>
+                                        <input class="form-control form-inline col-md-3" id="amphures"
+                                               name="amphures"
+                                               placeholder="อำเภอ">
                                     </div>
                                 </div>
 
@@ -286,9 +289,9 @@ WHERE cus_id = '{$_SESSION['id']}' and is_close = false GROUP BY cart.id";
                                     <div class="col-md-12 row">
                                         <label for="district" class="font-weight-bold col-form-label col-md-2"
                                                style="font-size: 15px;color: #646464">ตำบล : </label>
-                                        <select class="form-control col-md-4" id="districts" name="districts">
-                                            <option id="d_start" value="0">เลือกตำบล</option>
-                                        </select>
+                                        <input class="form-control form-inline col-md-3" id="districts"
+                                               name="districts"
+                                               placeholder="ตำบล">
                                     </div>
                                 </div>
 
