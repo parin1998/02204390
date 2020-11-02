@@ -1,211 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="zxx">
 <?php
-echo "5555555555";
-$servername = "localhost";
-$db_name = "02204390";
-$username = "root";
-$password = "";
-try {
-	$conn = new PDO("mysql:host=$servername;dbname=$db_name;charset=utf8", $username, $password);
-	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	echo "yes";
-	
-} catch (PDOException $e) {
-	echo "Connection failed: ";
-}
+require("head.html");
 
 ?>
-<!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<title>Diana’s jewelry</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<link rel="stylesheet" media="all" href="css/style.css">
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body>
 
-	<header id="header">
-		<div class="container">
-			<a href="index.php" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
-			<div class="right-links">
-				<ul>
-					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4 500.00</a></li>
-					<li><a href="#"><span class="ico-account"></span>Account</a></li>
-					<li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- / container -->
-	</header>
-	<!-- / header -->
+<body class="test">
 
-	<nav id="menu">
-		<div class="container">
-			<div class="trigger"></div>
-			<ul>
-				<li><a href="products.html">New collection</a></li>
-				<li><a href="products.html">necklaces</a></li>
-				<li><a href="products.html">earrings</a></li>
-				<li><a href="products.html">Rings</a></li>
-				<li><a href="products.html">Gift cards</a></li>
-				<li><a href="products.html">Promotions</a></li>
-			</ul>
-		</div>
-		<!-- / container -->
-	</nav>
-	<!-- / navigation -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZNSRF2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-	<div id="slider">
-		<ul>
-			<li style="background-image: url(images/0.jpg)">
-				<h3>Make your life better</h3>
-				<h2>Genuine diamonds</h2>
-				<a href="#" class="btn-more">Read more</a>
-			</li>
-			<li class="purple" style="background-image: url(images/01.jpg)">
-				<h3>She will say “yes”</h3>
-				<h2>engagement ring</h2>
-				<a href="#" class="btn-more">Read more</a>
-			</li>
-			<li class="yellow" style="background-image: url(images/02.jpg)">
-				<h3>You deserve to be beauty</h3>
-				<h2>golden bracelets</h2>
-				<a href="#" class="btn-more">Read more</a>
-			</li>
-		</ul>
-	</div>
-	<!-- / body -->
+    <!--::header part start::-->
+    <?php
+    require("header.php");
+    function function_alert($msg)
+    {
+        echo "<script type='text/javascript'>alert('$msg');</script>";
+    }
+    if (isset($_GET['time']))
+        function_alert("หมดเวลากรเชื่อมต่อของคุณ");
 
-	<div id="body">
-		<div class="container">
-			<div class="last-products">
-				<h2>Last added products</h2>
-				<section class="products">
-					<article>
-						<img src="images/1.jpg" alt="" width="194"  height="210">
-						<h3>Excepteur sint occaecat</h3>
-						<h4>$1 850.00</h4>
-						<a href="cart.html" class="btn-add">Add to cart</a>
-					</article>
-					<article>
-						<img src="images/2.jpg" alt="" width="194"  height="210">
-						<h3>Lorem ipsum dolor</h3>
-						<h4>$990.00</h4>
-						<a href="cart.html" class="btn-add">Add to cart</a>
-					</article>
-					<article>
-						<img src="images/3.jpg" alt="" width="194"  height="210">
-						<h3>cupidatat non proident</h3>
-						<h4>$1 200.00</h4>
-						<a href="cart.html" class="btn-add">Add to cart</a>
-					</article>
-					<article>
-						<img src="images/4.jpg" alt="" width="194"  height="210">
-						<h3>Duis aute irure</h3>
-						<h4>$2 650.00</h4>
-						<a href="cart.html" class="btn-add">Add to cart</a>
-					</article>
-					<article>
-						<img src="images/5.jpg" alt="" width="194"  height="210">
-						<h3>magna aliqua</h3>
-						<h4>$3 500.00</h4>
-						<a href="cart.html" class="btn-add">Add to cart</a>
-					</article>
-				</section>
-			</div>
-			<section class="quick-links">
-				<article style="background-image: url(images/SCKPSlogo.jpg)">
-					<a href="#" class="table">
-						<div class="cell">
-							<div class="text">
-								<h4>Lorem ipsum</h4>
-								<hr>
-								<h3>Dolor sit amet</h3>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article class="red" style="background-image: url(images/SCKPSlogo.jpg)">
-					<a href="#" class="table">
-						<div class="cell">
-							<div class="text">
-								<h4>consequatur</h4>
-								<hr>
-								<h3>voluptatem</h3>
-								<hr>
-								<p>Accusantium</p>
-							</div>
-						</div>
-					</a>
-				</article>
-				<article style="background-image: url(images/SCKPSlogo.jpg)">
-					<a href="#" class="table">
-						<div class="cell">
-							<div class="text">
-								<h4>culpa qui officia</h4>
-								<hr>
-								<h3>magnam aliquam</h3>
-							</div>
-						</div>
-					</a>
-				</article>
-			</section>
-		</div>
-		<!-- / container -->
-	</div>
-	<!-- / body -->
+    if (isset($_GET['allow']))
+        function_alert("คุณไม่ได้รับอณุญาติให้ดูหน้านี้");
 
-	<footer id="footer">
-		<div class="container">
-			<div class="cols">
-				<div class="col">
-					<h3>Frequently Asked Questions</h3>
-					<ul>
-						<li><a href="#">Fusce eget dolor adipiscing </a></li>
-						<li><a href="#">Posuere nisl eu venenatis gravida</a></li>
-						<li><a href="#">Morbi dictum ligula mattis</a></li>
-						<li><a href="#">Etiam diam vel dolor luctus dapibus</a></li>
-						<li><a href="#">Vestibulum ultrices magna </a></li>
-					</ul>
-				</div>
-				<div class="col media">
-					<h3>Social media</h3>
-					<ul class="social">
-						<li><a href="#"><span class="ico ico-fb"></span>Facebook</a></li>
-						<li><a href="#"><span class="ico ico-tw"></span>Twitter</a></li>
-						<li><a href="#"><span class="ico ico-ig"></span>Google+</a></li>
-						<li><a href="#"><span class="ico ico-pi"></span>Pinterest</a></li>
-					</ul>
-				</div>
-				<div class="col contact">
-					<h3>Contact us</h3>
-					<p>Diana’s Jewelry INC.<br>54233 Avenue Street<br>New York</p>
-					<p><span class="ico ico-em"></span><a href="#">contact@dianasjewelry.com</a></p>
-					<p><span class="ico ico-ph"></span>(590) 423 446 924</p>
-				</div>
-				<div class="col newsletter">
-					<h3>Join our newsletter</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium.</p>
-					<form action="#">
-						<input type="text" placeholder="Your email address...">
-						<button type="submit"></button>
-					</form>
-				</div>
-			</div>
-			<p class="copy">Copyright 2013 Jewelry. All rights reserved.</p>
-		</div>
-		<!-- / container -->
-	</footer>
-	<!-- / footer -->
+    if (isset($_SESSION['id']))
+        console_log($_SESSION['id']);
+    ?>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="main_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 pl-0 pr-0">
+                    <img src="img/banner.webp" alt="#" class="img-fluid col-sm-12 col-md-12 mt-sm-0 pl-0 pr-0">
+                    <!-- <img src="img/banner_pattern.png " alt="#" class="pattern_img img-fluid"> -->
+                </div>
+                <div class="col-md-5">
+                    <div class="banner_text col-sm-12 pl-0 pr-0">
+                        <div class="">
+                            <h1>หมอนยางพาราคุณภาพสูง</h1>
+                            <p>
+                                หมอนยางพารา Pilowy เป็นหมอนยางพาราแท้ 100% จากบริษัท Thai rubber ผู้ผลิตและจำหน่ายยางพารา
+                                Top
+                                3 ของประเทศไทย
+                            </p>
+                            <!-- <a href="product_list.php" class="btn_1">shop now</a> -->
+                            <?php
+                            if (isset($_SESSION['id'])) {
+                                $from2 = "product_list.php";
+                            } else {
+                                $from2 = "login.php?from=index";
+                            }
+                            ?>
+                            <a href="<?php echo $from2; ?>" class="btn_1">shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- product list start-->
+    <section class="single_product_list pt-3 mt-md-5 pt-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="single_product_iner">
+                        <div class="row align-items-center justify-content-between pt-md-5">
+                            <div class="col-lg-6 col-sm-12">
+                                <img src="img/single_product_1.webp" class="img-fluid border-circle-square col-md-12 col-sm-12" alt="#">
+
+                            </div>
+                            <div class="col-lg-5 col-sm-6">
+                                <div class="single_product_content">
+                                    <h5>ราคาใบละ 590 บาท ส่งฟรี!!!</h5>
+                                    <h2>หมอนแบบ Massage</h2>
+                                    <p class="col-sm-12 pl-0">
+                                        -รูปทรงแบบ Contour แล้วเพิ่มปุ่มแบบ Durian <br />
+                                        -ลดการเกร็งกล้ามเนื้อต้นคอ <br />
+                                        -การพักผ่อนมีประสิทธิ์ภาพมากขึ้น <br />
+                                        -ได้รับความนิยมจากในประเทศและนอกประเทศ <br /><br />
+                                    </p>
+                                    <a href="single-product.php?id=1" class="btn_3 mt-2">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_product_iner">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-6 col-sm-12">
+                                <img src="img/single_product_2.webp" class="img-fluid border-circle-square col-md-12 col-sm-12" alt="#">
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="single_product_content">
+                                    <h5>ราคาใบละ 590 บาท ส่งฟรี!!!</h5>
+                                    <h2>หมอนแบบ Contour (เรียบ)</h2>
+                                    <p class="col-sm-12 pl-0">
+                                        -เน้นส่วนโค้งเพื่อพยุงศรีษะ ไหล่ คอ <br />
+                                        -การนอนถูกต้องตามสรีระ <br />
+                                        -ลดการปวดเมื่อย ลดการปวดคอ ลดการนอนกรน <br /><br />
+                                    </p>
+                                    <a href="single-product.php?id=2" class="btn_3 mt-2">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_product_iner">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-6 col-sm-12">
+                                <img src="img/single_product_5.webp" class="img-fluid border-circle-square col-md-12 col-sm-12" alt="#">
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="single_product_content">
+                                    <h5>ราคาใบละ 590 บาท ส่งฟรี!!!</h5>
+                                    <h2>หมอนแบบ Contour (มีปุ่ม)</h2>
+                                    <p class="col-sm-12 pl-0">
+                                        -เน้นส่วนโค้งเพื่อพยุงศรีษะ ไหล่ คอ <br />
+                                        -การนอนถูกต้องตามสรีระ <br />
+                                        -ลดการปวดเมื่อย ลดการปวดคอ ลดการนอนกรน <br /><br />
+                                    </p>
+                                    <a href="single-product.php?id=5" class="btn_3 mt-2">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_product_iner">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-6 col-sm-6">
+                                <img src="img/single_product_3.webp" width="548" height="460" class="img-fluid border-circle-square" alt="#">
+                            </div>
+                            <div class="col-lg-5 col-sm-12 ">
+                                <div class="single_product_content">
+                                    <h5>ราคาใบละ 590 บาท ส่งฟรี!!!</h5>
+                                    <h2>หมอนแบบ Heart</h2>
+                                    <p class="col-sm-12 pl-0">
+                                        -หมอนทรงหัวใจลดอาการปวดคอ <br />
+                                        -ป้องกันการตกหมอน <br />
+                                        -กระตุ้นการไหลเวียนโลหิต <br /><br />
+                                    </p>
+                                    <a href="single-product.php?id=3" class="btn_3 mt-2">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_product_iner">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-lg-6 col-sm-6">
+                                <img src="img/single_product_4.webp" width="548" height="460" class="img-fluid border-circle-square" alt="#">
+                            </div>
+                            <div class="col-lg-5 col-sm-12">
+                                <div class="single_product_content">
+                                    <h5>ราคาใบละ 590 บาท ส่งฟรี!!!</h5>
+                                    <h2>หมอนแบบ Durian</h2>
+                                    <p class="col-sm-12 pl-0">
+                                        -หมอนทุเรียนลดอาการปวดคอ <br />
+                                        -ป้องกันการตกหมอน <br />
+                                        -กระตุ้นการไหลเวียนโลหิต <br /><br />
+                                    </p>
+                                    <a href="single-product.php?id=4" class="btn_3 mt-2">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product list end-->
 
 
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+    <!-- trending item start-->
+    <!--<section class="trending_items">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section_tittle text-center">
+                    <h2>Trending Items</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="single_product_item">
+                    <div class="single_product_item_thumb">
+                        <img src="img/tranding_item/tranding_item_1.png" alt="#" class="img-fluid">
+                    </div>
+                    <h3><a href="single-product.php">Cervical pillow for airplane
+                            car office nap pillow</a></h3>
+                    <p>From $5</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="single_product_item">
+                    <img src="img/tranding_item/tranding_item_2.png" alt="#" class="img-fluid">
+                    <h3><a href="single-product.php">Foam filling cotton slow rebound pillows</a></h3>
+                    <p>From $5</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="single_product_item">
+                    <img src="img/tranding_item/tranding_item_3.png" alt="#" class="img-fluid">
+                    <h3><a href="single-product.php">Memory foam filling cotton Slow rebound pillows</a></h3>
+                    <p>From $5</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="single_product_item">
+                    <img src="img/tranding_item/tranding_item_4.png" alt="#" class="img-fluid">
+                    <h3><a href="single-product.php">Cervical pillow for airplane
+                            car office nap pillow</a></h3>
+                    <p>From $5</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="single_product_item">
+                    <img src="img/tranding_item/tranding_item_5.png" alt="#" class="img-fluid">
+                    <h3><a href="single-product.php">Foam filling cotton slow rebound pillows</a></h3>
+                    <p>From $5</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="single_product_item">
+                    <img src="img/tranding_item/tranding_item_6.png" alt="#" class="img-fluid">
+                    <h3><a href="single-product.php">Memory foam filling cotton Slow rebound pillows</a></h3>
+                    <p>From $5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+    <!-- trending item end-->
+
+    <!--::footer_part start::-->
+    <?php
+    require("footer.php");
+    ?>
+    <!--::footer_part end::-->
+
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- magnific popup js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+    </div>
 </body>
+
+
 </html>
