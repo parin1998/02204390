@@ -177,7 +177,7 @@ try {
 					<ul class="social">
 						<li><a href="#"><span class="ico ico-fb"></span>Facebook</a></li>
 						<li><a href="#"><span class="ico ico-tw"></span>Twitter</a></li>
-						<li><a href="#"><span class="ico ico-gp"></span>Google+</a></li>
+						<li><a href="#"><span class="ico ico-ig"></span>Google+</a></li>
 						<li><a href="#"><span class="ico ico-pi"></span>Pinterest</a></li>
 					</ul>
 				</div>
