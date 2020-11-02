@@ -10,7 +10,7 @@ FROM districts
 INNER JOIN amphures on districts.amphure_id = amphures.id
 INNER JOIN provinces on amphures.province_id = provinces.id
 WHERE districts.zip_code = '{$_POST['postal_code']}'
-GROUP BY districts.id
+GROUP BY districts.id,districts.name_th 
 ORDER BY districts.id ASC
 ";
             $result = selectAll($db,$sql);

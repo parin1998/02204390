@@ -273,9 +273,9 @@ WHERE cus_id = '{$_SESSION['id']}' and is_close = false GROUP BY cart.id";
                                         <!--                                        <select class="form-control col-md-4" id="provinces" name="provinces">-->
                                         <!--                                            <option value="0" id="p_start">เลือกจังหวัด</option>-->
 
-                                        //province sql
+                                        <!-- //province sql
 
-                                        //End province sql
+                                        //End province sql -->
                                         </select>
                                         <label for="amphures" class="font-weight-bold col-form-label col-md-auto"
                                                style="font-size: 15px;color: #646464">อำเภอ : </label>
