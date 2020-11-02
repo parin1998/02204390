@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+echo "5555555555";
 $servername = "localhost";
 $db_name = "02204390";
 $username = "root";
@@ -91,25 +92,25 @@ try {
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/11.jpg" alt="" width="194"  height="210">
+						<img src="images/2.jpg" alt="" width="194"  height="210">
 						<h3>Lorem ipsum dolor</h3>
 						<h4>$990.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/12.jpg" alt="" width="194"  height="210">
+						<img src="images/3.jpg" alt="" width="194"  height="210">
 						<h3>cupidatat non proident</h3>
 						<h4>$1 200.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/13.jpg" alt="" width="194"  height="210">
+						<img src="images/4.jpg" alt="" width="194"  height="210">
 						<h3>Duis aute irure</h3>
 						<h4>$2 650.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/14.jpg" alt="" width="194"  height="210">
+						<img src="images/5.jpg" alt="" width="194"  height="210">
 						<h3>magna aliqua</h3>
 						<h4>$3 500.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
@@ -117,7 +118,7 @@ try {
 				</section>
 			</div>
 			<section class="quick-links">
-				<article style="background-image: url(images/2.jpg)">
+				<article style="background-image: url(images/SCKPSlogo.jpg)">
 					<a href="#" class="table">
 						<div class="cell">
 							<div class="text">
@@ -128,7 +129,7 @@ try {
 						</div>
 					</a>
 				</article>
-				<article class="red" style="background-image: url(images/3.jpg)">
+				<article class="red" style="background-image: url(images/SCKPSlogo.jpg)">
 					<a href="#" class="table">
 						<div class="cell">
 							<div class="text">
@@ -141,7 +142,7 @@ try {
 						</div>
 					</a>
 				</article>
-				<article style="background-image: url(images/4.jpg)">
+				<article style="background-image: url(images/SCKPSlogo.jpg)">
 					<a href="#" class="table">
 						<div class="cell">
 							<div class="text">
