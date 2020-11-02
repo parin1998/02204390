@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<?php
+$servername = "localhost";
+$db_name = "02204390";
+$username = "root";
+$password = "";
+try {
+	$conn = new PDO("mysql:host=$servername;dbname=$db_name;charset=utf8", $username, $password);
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	echo "yes";
+	
+} catch (PDOException $e) {
+	echo "Connection failed: ";
+}
+
+?>
 <!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
