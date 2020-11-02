@@ -29,7 +29,7 @@ try {
 
 	<header id="header">
 		<div class="container">
-			<a href="index.html" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
+			<a href="index.php" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
 			<div class="right-links">
 				<ul>
 					<li><a href="cart.html"><span class="ico-products"></span>3 products, $4 500.00</a></li>
@@ -85,31 +85,31 @@ try {
 				<h2>Last added products</h2>
 				<section class="products">
 					<article>
-						<img src="images/1.jpg" alt="">
+						<img src="images/1.jpg" alt="" width="194"  height="210">
 						<h3>Excepteur sint occaecat</h3>
 						<h4>$1 850.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/11.jpg" alt="">
+						<img src="images/11.jpg" alt="" width="194"  height="210">
 						<h3>Lorem ipsum dolor</h3>
 						<h4>$990.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/12.jpg" alt="">
+						<img src="images/12.jpg" alt="" width="194"  height="210">
 						<h3>cupidatat non proident</h3>
 						<h4>$1 200.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/13.jpg" alt="">
+						<img src="images/13.jpg" alt="" width="194"  height="210">
 						<h3>Duis aute irure</h3>
 						<h4>$2 650.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
 					</article>
 					<article>
-						<img src="images/14.jpg" alt="">
+						<img src="images/14.jpg" alt="" width="194"  height="210">
 						<h3>magna aliqua</h3>
 						<h4>$3 500.00</h4>
 						<a href="cart.html" class="btn-add">Add to cart</a>
