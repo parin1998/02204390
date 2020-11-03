@@ -96,7 +96,7 @@
     <div class="footer_iner">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="footer_menu">
                         <div class="footer_logo">
                             <a href="index.php"><img src="img/favicon.gif" alt="#"></a>
@@ -127,6 +127,7 @@
                             ?>
 
                             <a href="<?php echo $page; ?>">Payment</a>
+                            <a href="https://lin.ee/daRoZx0">Add Line</a>
 
                             <!-- <a href="#">Pages</a>
                             <a href="blog.html">Blog</a>
@@ -134,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="social_icon">
                         <a href="https://www.facebook.com/Pilowy-%E0%B8%AB%E0%B8%A1%E0%B8%AD%E0%B8%99%E0%B8%A2%E0%B8%B2%E0%B8%87%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E-103141214799677/" target="new">
                             <i class="fab fa-facebook-f"></i></a>
